@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95836448087985174}
   - component: {fileID: 61035174284158114}
   - component: {fileID: 50513905765451930}
+  - component: {fileID: 114424981732443332}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -105,6 +106,25 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114424981732443332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623521975637950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f16d6f16bc248e45aff5f281d9eb322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveTime: 0.1
+  blockingLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  wallDamage: 1
+  pointsPerFood: 10
+  pointsPerSoda: 20
+  restartLevelDelay: 1
 --- !u!212 &212940034830917104
 SpriteRenderer:
   m_ObjectHideFlags: 1
