@@ -26,7 +26,9 @@ public class Player : MovingObject {
 
     // Update is called once per frame
     void Update () {
-        if (!GameManager.instance.playersTurn) return;
+        if (!GameManager.instance.playersTurn) {
+            return;
+        }
 
         int horizontal = 0;
         int vertical = 0;
@@ -51,7 +53,7 @@ public class Player : MovingObject {
 
         RaycastHit2D hit;
 
-        //GameManager.instance.playersTurn = false;
+        GameManager.instance.playersTurn = false;
     }
 
     protected override void OnCantMove<T>(T component) {
